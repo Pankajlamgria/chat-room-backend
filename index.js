@@ -11,7 +11,7 @@ let UserName = "";
 const rooms = {};
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chaterverse.netlify.app/",
     methods: ["GET", "POST"],
   },
 });
