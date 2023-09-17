@@ -9,11 +9,11 @@ app.use(cors());
 
 let UserName = "";
 const rooms = {};
+
 const io = new Server(server, {
   cors: {
-    origin: "https://chaterverse.netlify.app/",
-    methods: ["GET", "POST"],
-  },
+    origin: '*',
+  }
 });
 io.on("connection", (socket) => {
   socket.on("createRoom", (data) => {
